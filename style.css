@@ -1,0 +1,155 @@
+/* ========== 共通設定 ========== */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  margin: 0;
+  padding: 0;
+  color: #f1faee;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.2);
+  margin-top: 30px;
+}
+
+/* ========== 入力カード ========== */
+.form-card {
+  background: #fff;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+
+.form-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #1d3557;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.unit-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.unit-label {
+  min-width: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ========== ボタン ========== */
+.btn-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#addBtn {
+  background: #e63946;
+  color: #fff;
+}
+#addBtn:hover {
+  background: #b81d2c;
+}
+
+#calcBtn {
+  background: #06d6a0;
+  color: #fff;
+}
+#calcBtn:hover {
+  background: #049d76;
+}
+
+#resetBtn {
+  background: #f4a261;
+  color: #fff;
+}
+#resetBtn:hover {
+  background: #e76f51;
+}
+
+/* ========== 結果表示 ========== */
+#resultSection {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#details {
+  text-align: left;
+  background: #f1faee;
+  color: #1d3557;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  white-space: pre-line;
+}
+
+#total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #a8dadc;
+  color: #1d3557;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ========== レスポンシブ対応 ========== */
+@media (min-width: 600px) {
+  .btn-area {
+    flex-direction: row;
+  }
+  button {
+    font-size: 1.1rem;
+  }
+}
